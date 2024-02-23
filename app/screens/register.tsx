@@ -8,12 +8,27 @@ import {
   View,
 } from "react-native";
 import { Link } from "expo-router";
-import { styles } from "../styles/styles";
+import { styles } from "../../styles/styles";
 
-export default function App() {
+export default function Register() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome on Board !!</Text>
+      <Text style={styles.title}>Create Account Now !!</Text>
+      <TextInput
+        placeholder="Username"
+        keyboardType="email-address"
+        style={styles.input}
+      />
+      <TextInput
+        placeholder="Username"
+        keyboardType="email-address"
+        style={styles.input}
+      />
+      <TextInput
+        placeholder="Username"
+        keyboardType="email-address"
+        style={styles.input}
+      />
       <TextInput
         placeholder="Username"
         keyboardType="email-address"
