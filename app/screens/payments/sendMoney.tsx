@@ -5,14 +5,24 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  ImageBackground,
   View,
 } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "../../../styles/styles";
 
+const image = { uri: "https://legacy.reactjs.org/logo-og.png" };
+
 export default function SendMoney() {
   return (
     <View style={styles.container}>
+      <View>
+        <ImageBackground
+          source={image}
+          resizeMode="cover"
+          style={styles.image}
+        ></ImageBackground>
+      </View>
       <Text style={styles.title}>Send Money Now !!</Text>
 
       <TextInput
