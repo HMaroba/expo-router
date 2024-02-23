@@ -20,15 +20,15 @@ export const styles = StyleSheet.create({
     fontSize: 20,
   },
   registerLink: {
-  fontSize: 18,
-  justifyContent: 'flex-end',
-  marginTop: 20
+    fontSize: 18,
+    justifyContent: "flex-end",
+    marginTop: 20,
   },
   label: {
-   textAlign: 'left',
-   width: '80%',
-   fontSize: 18,
-   marginBottom: 3
+    textAlign: "left",
+    width: "80%",
+    fontSize: 18,
+    marginBottom: 3,
   },
   input: {
     borderWidth: 1,
@@ -53,4 +53,30 @@ export const styles = StyleSheet.create({
     marginTop: 9,
     fontSize: 18,
   },
- });
+
+  About: {
+    flexDirection: "row", // Horizontal layout
+    flexWrap: "wrap", // Wrap content to next line if it exceeds the container width
+    justifyContent: "space-between",
+    padding: 30,
+    marginTop: 100,
+  },
+  column: {
+    width: "30%",
+    marginBottom: 10,
+    backgroundColor: "black",
+    borderRadius: 10,
+    padding: 5,
+    minHeight: 100,
+    justifyContent: "center",
+  },
+  boxText: {
+    color: "white",
+    fontSize: 18,
+    textAlign: "center",
+  },
+  image: {
+   minHeight: 200,
+   backgroundColor: 'white'
+  },
+});
