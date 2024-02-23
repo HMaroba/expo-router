@@ -9,14 +9,18 @@ export const styles = StyleSheet.create({
   },
   container2: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    padding: 10
   },
   container3: {
     flex: 1,
     alignItems: "center",
     marginTop: 300,
     justifyContent: "center",
+  },
+  card: {
+  padding: 20,
+  backgroundColor: 'blue',
+  borderRadius: 20
   },
   title: {
     fontSize: 28,
