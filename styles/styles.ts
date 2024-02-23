@@ -12,9 +12,24 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  container3: {
+    flex: 1,
+    alignItems: "center",
+    marginTop: 300,
+    justifyContent: "center",
+  },
   title: {
     fontSize: 28,
     marginBottom: 20,
+  },
+  title2: {
+    fontSize: 28,
+    marginBottom: 20,
+    color: 'white',
+    textAlign: 'center',
+    lineHeight: 84,
+    fontWeight: 'bold',
+  
   },
   subTitle: {
     fontSize: 20,
@@ -36,7 +51,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     height: 45,
     padding: 10,
-    margin: 5,
+    margin: 10,
     borderRadius: 6,
   },
 
