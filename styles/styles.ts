@@ -9,11 +9,14 @@ export const styles = StyleSheet.create({
   },
   container2: {
     flex: 1,
-    // backgroundColor: '#1974D2',
     alignItems: "center",
     justifyContent: "center",
   },
-  text: {
+  title: {
+    fontSize: 28,
+    marginBottom: 20,
+  },
+  subTitle: {
     fontSize: 20,
   },
   input: {
@@ -24,10 +27,11 @@ export const styles = StyleSheet.create({
     margin: 5,
     borderRadius: 6,
   },
+
   btn: {
     height: 40,
     marginTop: 10,
-    backgroundColor: "#0D3AA9",
+    backgroundColor: "#222222",
     width: 300,
     borderRadius: 6,
   },
@@ -35,38 +39,6 @@ export const styles = StyleSheet.create({
     color: "white",
     textAlign: "center",
     marginTop: 9,
-    fontSize: 16,
-  },
-  card: {
-    width: "90%",
-    backgroundColor: "white",
-    height: "15%",
-    marginBottom: 5,
-    marginTop: 20,
-    borderRadius: 4,
-  },
-  leaveCard: {
-    width: "90%",
-    backgroundColor: "white",
-    height: "15%",
-  },
-  cardTitle: {
-    marginLeft: 10,
-    fontSize: 20,
-  },
-  cardSubTitle: {
-    marginLeft: 10,
-    marginTop: 5,
-    fontSize: 17,
-  },
-  forgotPassword: {
-    marginStart: "auto",
-    marginRight: 35,
     fontSize: 18,
   },
-  image: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
+ });
