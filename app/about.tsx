@@ -25,7 +25,10 @@ export default function About() {
           <Text style={styles.boxText}>Withdraw</Text>
         </View>
         <View style={styles.column}>
-          <Text style={styles.boxText}>Pay</Text>
+         
+          <Link style={styles.boxText} href={"/screens/payments/pay"}>
+            Pay
+          </Link>
         </View>
         <View style={styles.column}>
           <Link style={styles.boxText} href={"/screens/payments/sendMoney"}>

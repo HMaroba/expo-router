@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import {
+  Button,
   Pressable,
   StyleSheet,
   Text,
@@ -11,6 +12,11 @@ import { Link } from "expo-router";
 import { styles } from "../styles/styles";
 
 export default function App() {
+  async function fetchHello() {
+    const response = await fetch("/hello");
+    const data = await response.json();
+    alert("Hello " + data.hello);
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome on Board !!</Text>
@@ -20,7 +26,7 @@ export default function App() {
         keyboardType="email-address"
         style={styles.input}
       />
-        <Text style={styles.label}>Password</Text>
+      <Text style={styles.label}>Password</Text>
       <TextInput
         placeholder="Password"
         keyboardType="email-address"
@@ -31,7 +37,10 @@ export default function App() {
           Submit
         </Link>
       </TouchableOpacity>
-      <Link href="/screens/register" style={styles.registerLink}>Register today to join us </Link>
+      <Link href="/screens/register" style={styles.registerLink}>
+        Register today to join us{" "}
+      </Link>
+  
       <StatusBar style="auto" />
     </View>
   );
