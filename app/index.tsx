@@ -14,11 +14,13 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome on Board !!</Text>
+      <Text style={styles.label}>Username</Text>
       <TextInput
         placeholder="Username"
         keyboardType="email-address"
         style={styles.input}
       />
+        <Text style={styles.label}>Password</Text>
       <TextInput
         placeholder="Password"
         keyboardType="email-address"

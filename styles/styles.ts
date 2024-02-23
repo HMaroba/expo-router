@@ -24,6 +24,12 @@ export const styles = StyleSheet.create({
   justifyContent: 'flex-end',
   marginTop: 20
   },
+  label: {
+   textAlign: 'left',
+   width: '80%',
+   fontSize: 18,
+   marginBottom: 3
+  },
   input: {
     borderWidth: 1,
     width: "80%",
