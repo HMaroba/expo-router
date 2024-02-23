@@ -29,7 +29,7 @@ export default function App() {
           Submit
         </Link>
       </TouchableOpacity>
-      {/* <Link href="/about">About</Link> */}
+      <Link href="/screens/register" style={styles.registerLink}>Register today to join us </Link>
       <StatusBar style="auto" />
     </View>
   );

@@ -15,25 +15,21 @@ export default function Register() {
     <View style={styles.container}>
       <Text style={styles.title}>Create Account Now !!</Text>
       <TextInput
-        placeholder="Username"
+        placeholder="Full Names"
         keyboardType="email-address"
         style={styles.input}
       />
       <TextInput
-        placeholder="Username"
+        placeholder="Phone Number"
         keyboardType="email-address"
         style={styles.input}
       />
       <TextInput
-        placeholder="Username"
+        placeholder="Email Address"
         keyboardType="email-address"
         style={styles.input}
       />
-      <TextInput
-        placeholder="Username"
-        keyboardType="email-address"
-        style={styles.input}
-      />
+
       <TextInput
         placeholder="Password"
         keyboardType="email-address"

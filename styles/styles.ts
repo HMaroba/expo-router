@@ -19,6 +19,11 @@ export const styles = StyleSheet.create({
   subTitle: {
     fontSize: 20,
   },
+  registerLink: {
+  fontSize: 18,
+  justifyContent: 'flex-end',
+  marginTop: 20
+  },
   input: {
     borderWidth: 1,
     width: "80%",
