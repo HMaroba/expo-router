@@ -17,7 +17,7 @@ export default function About() {
       </View>
       <View style={styles.About}>
         <View style={styles.column}>
-          <Text style={styles.boxText}>Deposit</Text>
+          <Link style={styles.boxText} href={'/screens/payments/sendMoney'}>Deposit</Link>
         </View>
         <View style={styles.column}>
           <Text style={styles.boxText}>Withdraw</Text>
@@ -26,7 +26,7 @@ export default function About() {
           <Text style={styles.boxText}>Pay</Text>
         </View>
         <View style={styles.column}>
-          <Text style={styles.boxText}>Send Money</Text>
+        <Link style={styles.boxText} href={'/screens/payments/sendMoney'}>Send Money</Link>
         </View>
         <View style={styles.column}>
           <Text style={styles.boxText}>Profile</Text>
