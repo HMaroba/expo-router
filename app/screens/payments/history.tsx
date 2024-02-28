@@ -1,7 +1,8 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
-import { Link } from "expo-router";
-import { styles } from "../../../styles/styles";
+import { Text, View } from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { FontAwesome } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 export default function History() {
   return (
@@ -57,8 +58,43 @@ export default function History() {
           marginTop: 20,
         }}
       >
-        <Text style={{ fontSize: 30, marginBottom: 10  , color: 'gray'}}>Transactions</Text>
-        <View style={{ padding: 5, flexDirection: "row" }}>
+        <View style={{flexDirection: 'row'}}>
+          <Text style={{ fontSize: 30, marginBottom: 10, color: "gray" }}>
+            Transactions
+          </Text>
+
+          <View
+            style={{
+              borderWidth: 1,
+              backgroundColor: 'green',
+              height: 45,
+              width: 45,
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: 10,
+              marginLeft: 'auto',
+              borderColor: 'green'
+            }}
+          >
+            <AntDesign name="download" size={28} color="white" />
+          </View>
+        </View>
+
+        <View style={{ padding: 5, flexDirection: "row"  , marginTop: 20}}>
+          <View
+            style={{
+              borderWidth: 1,
+              borderColor: "gray",
+              height: 45,
+              width: 45,
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: 10,
+              marginRight: 10,
+            }}
+          >
+            <FontAwesome name="user-plus" size={24} color="green" />
+          </View>
           <View>
             <Text style={{ fontSize: 18 }}>Hlalele Maroba</Text>
             <Text style={{ fontSize: 16 }}>Deposited</Text>
@@ -79,6 +115,20 @@ export default function History() {
           </View>
         </View>
         <View style={{ padding: 5, flexDirection: "row" }}>
+          <View
+            style={{
+              borderWidth: 1,
+              borderColor: "gray",
+              height: 45,
+              width: 45,
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: 10,
+              marginRight: 10,
+            }}
+          >
+            <FontAwesome name="user-plus" size={24} color="green" />
+          </View>
           <View>
             <Text style={{ fontSize: 18 }}>ABC AGENT MASERU</Text>
             <Text style={{ fontSize: 16 }}>Withdrawal</Text>
