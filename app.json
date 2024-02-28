@@ -18,11 +18,13 @@
     "ios": {
       "supportsTablet": true
     },
+    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.marobacoffee.dashboard"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,8 +36,14 @@
           "origin": "https://evanbacon.dev/"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": "https://evanbacon.dev/"
+      },
+      "eas": {
+        "projectId": "2bd91d97-930a-4c34-b8cb-69526c14295a"
+      }
+    }
   }
-
-  
 }

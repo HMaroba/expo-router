@@ -1,18 +1,64 @@
 import { StatusBar } from "expo-status-bar";
+import React from "react";
+
+import { Bar, Doughnut, Pie } from "react-chartjs-2";
 import {
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ImageBackground,
-  View,
-  ScrollView,
-} from "react-native";
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  registerables,
+  Legend,
+} from "chart.js";
+
+import { Text, View, ScrollView } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "../../../styles/styles";
 
 const image = { uri: "https://legacy.reactjs.org/logo-og.png" };
 
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  ...registerables,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const Data = {
+  labels: ["Deposit", "Withdrawals"],
+  datasets: [
+    {
+      label: "# of Votes",
+      data: [12, 19],
+      backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)"],
+      borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
+      borderWidth: 1,
+    },
+  ],
+};
+
 export default function Balance() {
+  const getChartData = () => {
+    const chartData = {
+      labels: ["Customers", "Agent"],
+      datasets: [
+        {
+          data: [20, 80],
+          backgroundColor: ["#36A2EB", "#FFCE56"],
+          hoverBackgroundColor: ["#36A2EB", "#FFCE56"],
+        },
+      ],
+    };
+
+    return chartData;
+  };
   return (
     <View style={styles.container2}>
       <View style={{ flexDirection: "row", marginBottom: 10 }}>
@@ -42,6 +88,7 @@ export default function Balance() {
           marginTop: 20,
         }}
       >
+
         <Text style={{ fontSize: 20, color: "white", marginBottom: 10 }}>
           Transactions
         </Text>
