@@ -47,14 +47,14 @@ export default function About() {
             History
           </Link>
         </View>
- 
+        <View style={styles.column}>
+          <Link style={styles.boxText} href={"/screens/payments/more"}>
+            More
+          </Link>
+        </View>
+
         <View style={styles.column}>
           <Text style={styles.boxText}>Logout</Text>
-        </View>
-        <View style={styles.column}>
-          <Link style={styles.boxText} href={"/screens/payments/balance"}>
-            History
-          </Link>
         </View>
       </View>
     </View>
