@@ -17,7 +17,7 @@ export default function About() {
       </View>
       <View style={styles.About}>
         <View style={styles.column}>
-          <Link style={styles.boxText} href={"/screens/payments/sendMoney"}>
+          <Link style={styles.boxText} href={"/screens/payments/deposit"}>
             Deposit
           </Link>
         </View>

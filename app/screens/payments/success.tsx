@@ -6,20 +6,7 @@ import { styles } from "../../../styles/styles";
 export default function Deposit() {
   return (
     <View>
-      <View
-        style={{
-          backgroundColor: "black",
-          minHeight: 200,
-          borderBottomRightRadius: 20,
-          borderBottomLeftRadius: 20,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Text style={{ fontSize: 30, color: "white", fontWeight: "800" }}>
-          Deposit Money
-        </Text>
-      </View>
+     <Text>Payment Success</Text>
 
       <View style={styles.container3}>
         <TextInput
@@ -35,7 +22,7 @@ export default function Deposit() {
 
         <TouchableOpacity style={styles.btn}>
           <Link style={styles.btnText} href={"/about"}>
-            Submit
+            Go Home
           </Link>
         </TouchableOpacity>
         <StatusBar style="auto" />
