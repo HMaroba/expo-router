@@ -3,8 +3,8 @@ import { Text, View } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { FontAwesome } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
-import { AntDesign } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { AntDesign } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function More() {
   return (
@@ -64,13 +64,13 @@ export default function More() {
         <View
           style={{
             padding: 5,
-
+            marginLeft: 12,
             flexDirection: "row",
             marginTop: 20,
             width: "100%",
           }}
         >
-          <View>
+          <View style={{ width: "25%" }}>
             <View
               style={{
                 borderWidth: 1,
@@ -85,8 +85,9 @@ export default function More() {
             >
               <Feather name="send" size={32} color="green" />
             </View>
+            <Text style={{ padding: 3, marginLeft: 10 }}>Send Money</Text>
           </View>
-          <View>
+          <View style={{ width: "25%" }}>
             <View
               style={{
                 borderWidth: 1,
@@ -99,12 +100,16 @@ export default function More() {
                 marginRight: 10,
               }}
             >
-         
-              <MaterialCommunityIcons name="contactless-payment" size={32} color="green" />
+              <MaterialCommunityIcons
+                name="contactless-payment"
+                size={32}
+                color="green"
+              />
             </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Withdraw Money</Text>
           </View>
 
-          <View>
+          <View style={{ width: "25%" }}>
             <View
               style={{
                 borderWidth: 1,
@@ -119,35 +124,193 @@ export default function More() {
             >
               <Feather name="send" size={32} color="green" />
             </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Account Balance</Text>
           </View>
 
-          <View
-            style={{
-              borderWidth: 1,
-              borderColor: "gray",
-              height: 60,
-              width: 60,
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: 10,
-              marginRight: 10,
-            }}
-          >
-            <FontAwesome name="user-plus" size={28} color="green" />
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <AntDesign name="logout" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Logout</Text>
           </View>
-          <View
-            style={{
-              borderWidth: 1,
-              borderColor: "gray",
-              height: 60,
-              width: 60,
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: 10,
-              marginRight: 10,
-            }}
-          >
-           <AntDesign name="logout" size={32} color="green" />
+        </View>
+        <View
+          style={{
+            padding: 5,
+            marginLeft: 12,
+            flexDirection: "row",
+            marginTop: 20,
+            width: "100%",
+          }}
+        >
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <Feather name="send" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 3, marginLeft: 10 }}>Send Money</Text>
+          </View>
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <MaterialCommunityIcons
+                name="contactless-payment"
+                size={32}
+                color="green"
+              />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Withdraw Money</Text>
+          </View>
+
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <Feather name="send" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Account Balance</Text>
+          </View>
+
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <AntDesign name="logout" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Logout</Text>
+          </View>
+        </View>
+        <View
+          style={{
+            padding: 5,
+            marginLeft: 12,
+            flexDirection: "row",
+            marginTop: 20,
+            width: "100%",
+          }}
+        >
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <Feather name="send" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 3, marginLeft: 10 }}>Send Money</Text>
+          </View>
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <MaterialCommunityIcons
+                name="contactless-payment"
+                size={32}
+                color="green"
+              />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Withdraw Money</Text>
+          </View>
+
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <Feather name="send" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Account Balance</Text>
+          </View>
+
+          <View style={{ width: "25%" }}>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 60,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginRight: 10,
+              }}
+            >
+              <AntDesign name="logout" size={32} color="green" />
+            </View>
+            <Text style={{ padding: 1, marginLeft: 1 }}>Logout</Text>
           </View>
         </View>
       </View>
