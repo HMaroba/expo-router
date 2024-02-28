@@ -34,7 +34,7 @@ export default function Deposit() {
         />
 
         <TouchableOpacity style={styles.btn}>
-          <Link style={styles.btnText} href={"/success"}>
+          <Link style={styles.btnText} href={"/screens/payments/success"}>
             Submit
           </Link>
         </TouchableOpacity>
