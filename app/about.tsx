@@ -25,7 +25,6 @@ export default function About() {
           <Text style={styles.boxText}>Withdraw</Text>
         </View>
         <View style={styles.column}>
-         
           <Link style={styles.boxText} href={"/screens/payments/pay"}>
             Pay
           </Link>
@@ -39,12 +38,23 @@ export default function About() {
           <Text style={styles.boxText}>Profile</Text>
         </View>
         <View style={styles.column}>
-        <Link style={styles.boxText} href={"/screens/payments/balance"}>
-           Balance
+          <Link style={styles.boxText} href={"/screens/payments/balance"}>
+            Balance
           </Link>
         </View>
         <View style={styles.column}>
+          <Link style={styles.boxText} href={"/screens/payments/history"}>
+            History
+          </Link>
+        </View>
+ 
+        <View style={styles.column}>
           <Text style={styles.boxText}>Logout</Text>
+        </View>
+        <View style={styles.column}>
+          <Link style={styles.boxText} href={"/screens/payments/balance"}>
+            History
+          </Link>
         </View>
       </View>
     </View>

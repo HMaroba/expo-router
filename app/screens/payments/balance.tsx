@@ -48,53 +48,33 @@ export default function Balance() {
         <ScrollView>
           <View style={{ backgroundColor: "gray", padding: 5 }}>
             <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" , textAlign : 'right' }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: "green",
+                textAlign: "right",
+                fontWeight: "700",
+              }}
+            >
+              {" "}
+              +M200.00
+            </Text>
             <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
           </View>
           <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
             <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8 }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
-          </View>
-          <View style={{ backgroundColor: "gray", padding: 5, marginTop: 8  }}>
-            <Text style={{ fontSize: 14, color: "white" }}>Hlalele Maroba</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>M200.00</Text>
-            <Text style={{ fontSize: 14, color: "white" }}>Deposited</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: "red",
+                textAlign: "right",
+                fontWeight: "700",
+              }}
+            >
+              {" "}
+              -M200.00
+            </Text>
+            <Text style={{ fontSize: 14, color: "white" }}>Withdrawal</Text>
           </View>
         </ScrollView>
         <StatusBar style="auto" />
