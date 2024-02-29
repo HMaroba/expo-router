@@ -95,7 +95,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   image: {
-   minHeight: 200,
+   minHeight: 250,
    backgroundColor: 'white'
   },
 });

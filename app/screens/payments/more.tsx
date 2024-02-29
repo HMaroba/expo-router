@@ -1,15 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { FontAwesome } from "@expo/vector-icons";
+import { Text, View, ImageBackground } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+const image = {
+  uri: "https://img.freepik.com/free-vector/dark-blue-waves-dots-abstract-background_79603-879.jpg?w=996&t=st=1709189850~exp=1709190450~hmac=81f06229b4889b206a3cc0b8c5d2ca2699fccfae29099c4e85b649c680fd2b9a",
+};
+import { styles } from "../../../styles/styles";
 
 export default function More() {
   return (
     <View>
-      <View
+      {/* <View
         style={{
           backgroundColor: "black",
           minHeight: 200,
@@ -52,6 +54,14 @@ export default function More() {
         <Text style={{ fontSize: 40, color: "white", fontWeight: "800" }}>
           LSL 20000.00
         </Text>
+      </View> */}
+
+      <View>
+        <ImageBackground
+          source={image}
+          resizeMode="cover"
+          style={styles.image}
+        ></ImageBackground>
       </View>
 
       <View
