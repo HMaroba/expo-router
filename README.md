@@ -13,3 +13,6 @@ Android Studio
 Generate the native code for your project by running the following command:
 
 npx expo prebuild -p android
+
+
+https://docs.expo.dev/debugging/runtime-issues/
