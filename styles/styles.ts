@@ -96,6 +96,7 @@ export const styles = StyleSheet.create({
   },
   image: {
    minHeight: 250,
-   backgroundColor: 'white'
+   backgroundColor: 'white',
+   borderBottomEndRadius: 20,
   },
 });
