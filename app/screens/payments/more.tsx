@@ -57,11 +57,44 @@ export default function More() {
       </View> */}
 
       <View>
-        <ImageBackground
-          source={image}
-          resizeMode="cover"
-          style={styles.image}
-        ></ImageBackground>
+        <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+          <View style={{ padding: 20 }}>
+            <View style={{ flexDirection: "row", marginTop: 20 }}>
+              <Text
+                style={{
+                  fontSize: 30,
+                  color: "white",
+                  fontWeight: "200",
+                }}
+              >
+                Hi
+              </Text>
+              <Text
+                style={{
+                  fontSize: 30,
+                  color: "white",
+                  fontWeight: "600",
+                  marginLeft: 10,
+                }}
+              >
+                Hlalele Maroba
+              </Text>
+            </View>
+            <Text
+              style={{
+                fontSize: 20,
+                color: "white",
+                fontWeight: "200",
+                marginTop: 20,
+              }}
+            >
+              Balance
+            </Text>
+            <Text style={{ fontSize: 40, color: "white", fontWeight: "800" }}>
+              LSL 20000.00
+            </Text>
+          </View>
+        </ImageBackground>
       </View>
 
       <View
