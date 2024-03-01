@@ -23,7 +23,7 @@ export default function About() {
         </View>
 
         <View style={styles.column}>
-          <Link style={styles.boxText} href={"/screens/payments/pay"}>
+          <Link style={styles.boxText} href={"/screens/payments/withdraw"}>
             Withdraw
           </Link>
         </View>
