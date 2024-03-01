@@ -56,6 +56,7 @@ export default function Withdraw() {
           keyboardType="email-address"
           style={styles.input}
         />
+
         <TouchableOpacity style={styles.btn}>
           <Link style={styles.btnText} href={"/about"}>
             Submit
