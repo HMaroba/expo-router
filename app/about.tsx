@@ -8,12 +8,39 @@ const image = { uri: "https://legacy.reactjs.org/logo-og.png" };
 export default function About() {
   return (
     <View>
-      <View>
-        <ImageBackground
-          source={image}
-          resizeMode="cover"
-          style={styles.image}
-        ></ImageBackground>
+      <View style={{ padding: 20 }}>
+        <View
+          style={{
+            backgroundColor: "black",
+            height: 170,
+            padding: 20,
+            borderRadius: 10,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 25,
+
+              color: "white",
+              fontWeight: "300",
+            }}
+          >
+            Good Morning Hlalele !
+          </Text>
+          <Text
+            style={{
+              fontSize: 19,
+              marginTop: 20,
+              color: "white",
+              fontWeight: "300",
+            }}
+          >
+            Amount
+          </Text>
+          <Text style={{ fontSize: 30, color: "white", fontWeight: "800" }}>
+            LSL 2000.00
+          </Text>
+        </View>
       </View>
       <View style={styles.About}>
         <View style={styles.column}>
