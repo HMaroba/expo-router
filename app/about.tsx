@@ -21,8 +21,11 @@ export default function About() {
             Deposit
           </Link>
         </View>
+
         <View style={styles.column}>
-          <Text style={styles.boxText}>Withdraw</Text>
+          <Link style={styles.boxText} href={"/screens/payments/pay"}>
+            Withdraw
+          </Link>
         </View>
         <View style={styles.column}>
           <Link style={styles.boxText} href={"/screens/payments/pay"}>

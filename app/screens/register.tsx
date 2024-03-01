@@ -15,7 +15,7 @@ export default function Register() {
   return (
     <SafeAreaProvider>
       <View style={styles.container}>
-        <Text style={styles.title}>Create Account Now !!</Text>
+        <Text style={{textAlign: 'auto', width: '100%' , fontSize: 28 , padding: 35}}>Create Account Now !!</Text>
         <TextInput
           placeholder="Full Names"
           keyboardType="email-address"
@@ -31,6 +31,7 @@ export default function Register() {
           keyboardType="email-address"
           style={styles.input}
         />
+        
 
         <TextInput
           placeholder="Password"
