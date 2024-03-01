@@ -1,12 +1,15 @@
-import { Text, View, ImageBackground } from "react-native";
+import { Text, View, ImageBackground, TouchableOpacity } from "react-native";
 
 import { Link } from "expo-router";
 import { styles } from "../styles/styles";
 
 const image = { uri: "https://legacy.reactjs.org/logo-og.png" };
 import { MaterialIcons } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
+import { useState } from "react";
 
 export default function About() {
+  const [showBalance, setShowBalance] = useState(false);
   return (
     <View>
       <View style={{ padding: 20 }}>
@@ -41,10 +44,11 @@ export default function About() {
                 Amount
               </Text>
               <Text style={{ fontSize: 30, color: "white", fontWeight: "800" }}>
-                LSL 2000.00
+                {showBalance ? <>LSL 2000.00</> : <>*********</>}
               </Text>
             </View>
-            <View
+            <TouchableOpacity
+              onPress={() => setShowBalance(!showBalance)}
               style={{
                 borderWidth: 1,
                 borderColor: "gray",
@@ -53,13 +57,25 @@ export default function About() {
                 justifyContent: "center",
                 alignItems: "center",
                 borderRadius: 10,
-                marginLeft: 'auto',
+                marginLeft: "auto",
                 marginTop: 20,
                 marginRight: 10,
               }}
             >
-              <MaterialIcons name="remove-red-eye" size={24} color="white" />
-            </View>
+              {showBalance ? (
+                <>
+                  <MaterialIcons
+                    name="remove-red-eye"
+                    size={24}
+                    color="white"
+                  />
+                </>
+              ) : (
+                <>
+                  <Feather name="eye-off" size={24} color="white" />
+                </>
+              )}
+            </TouchableOpacity>
           </View>
         </View>
       </View>
