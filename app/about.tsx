@@ -4,6 +4,7 @@ import { Link } from "expo-router";
 import { styles } from "../styles/styles";
 
 const image = { uri: "https://legacy.reactjs.org/logo-og.png" };
+import { MaterialIcons } from "@expo/vector-icons";
 
 export default function About() {
   return (
@@ -27,19 +28,39 @@ export default function About() {
           >
             Good Morning Hlalele !
           </Text>
-          <Text
-            style={{
-              fontSize: 19,
-              marginTop: 20,
-              color: "white",
-              fontWeight: "300",
-            }}
-          >
-            Amount
-          </Text>
-          <Text style={{ fontSize: 30, color: "white", fontWeight: "800" }}>
-            LSL 2000.00
-          </Text>
+          <View style={{ flexDirection: "row", marginTop: 20 }}>
+            <View>
+              <Text
+                style={{
+                  fontSize: 19,
+
+                  color: "white",
+                  fontWeight: "300",
+                }}
+              >
+                Amount
+              </Text>
+              <Text style={{ fontSize: 30, color: "white", fontWeight: "800" }}>
+                LSL 2000.00
+              </Text>
+            </View>
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: "gray",
+                height: 40,
+                width: 40,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 10,
+                marginLeft: 'auto',
+                marginTop: 20,
+                marginRight: 10,
+              }}
+            >
+              <MaterialIcons name="remove-red-eye" size={24} color="white" />
+            </View>
+          </View>
         </View>
       </View>
       <View style={styles.About}>
