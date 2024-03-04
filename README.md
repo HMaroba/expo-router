@@ -16,3 +16,9 @@ npx expo prebuild -p android
 
 
 https://docs.expo.dev/debugging/runtime-issues/
+
+
+To create new app with expo router run command below
+
+npx create-expo-app@latest appName --example with-router
+
